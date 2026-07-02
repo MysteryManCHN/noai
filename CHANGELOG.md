@@ -1,5 +1,15 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+- 添加 `.trae/skills/github-repo-publisher/SKILL.md` - GitHub项目自动生成与发布助手 Skill
+- Skill 支持三种模式：全新项目创建、迭代更新、纯推送
+- 内置 Vibe Coding 初学者 10 条建议
+
+### Fixed
+- 修复 `pyproject.toml` 和 `README.md` 中的仓库占位符 URL
+
 ## [1.0.0] - 2026-07-02
 
 ### Added

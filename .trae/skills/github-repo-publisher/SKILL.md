@@ -294,6 +294,32 @@ project-name/
 - `.env.example` 只放占位符，不放真实值
 - `.gitignore` 必须包含 `.env`
 
+### Skill 文件特殊要求
+
+如果项目包含 `.trae/skills/<name>/SKILL.md`：
+- **必须以 YAML frontmatter 开头**：文件第一行必须是 `---`，然后是 name/description 等字段，再以 `---` 结束
+- **description 字段必须包含触发场景**：说明 "在什么情况下触发这个 skill"
+- **Skill 文件必须放在 `.trae/skills/<skill-name>/SKILL.md`** 路径下
+
+**正确示例**：
+```markdown
+---
+name: my-skill
+description: "描述功能。Invoke when 用户说XX或做YY。"
+metadata:
+  requires:
+    bins: ["git"]
+---
+
+# 标题
+...内容...
+```
+
+**常见错误**：
+- ❌ 文件开头直接写 `# 标题` 而没有 `---`
+- ❌ description 没有说明触发场景
+- ❌ 路径放错（如根目录下的 `skill.md` 而不是 `.trae/skills/xxx/SKILL.md`）
+
 ### 质量
 
 - 代码必须可运行，注释清晰
