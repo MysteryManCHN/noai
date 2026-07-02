@@ -26,10 +26,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-username/feishu-meeting-agent"
-Repository = "https://github.com/your-username/feishu-meeting-agent"
-Issues = "https://github.com/your-username/feishu-meeting-agent/issues"
-Documentation = "https://github.com/your-username/feishu-meeting-agent#readme"
+Homepage = "https://github.com/MysteryManCHN/noai"
+Repository = "https://github.com/MysteryManCHN/noai"
+Issues = "https://github.com/MysteryManCHN/noai/issues"
+Documentation = "https://github.com/MysteryManCHN/noai#readme"
 
 [project.scripts]
 feishu-agent = "meeting_agent.main:main"

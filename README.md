@@ -49,8 +49,8 @@ feishu-meeting-agent/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/feishu-meeting-agent.git
-cd feishu-meeting-agent
+git clone https://github.com/MysteryManCHN/noai.git
+cd noai
 
 # 安装依赖（选择你使用的LLM提供商）
 pip install -e ".[openai]"      # OpenAI
