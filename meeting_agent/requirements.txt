@@ -1,0 +1,13 @@
+# 飞书会议Agent依赖
+
+# LLM客户端（根据使用的provider选择安装）
+openai>=1.0.0      # OpenAI / DeepSeek API
+anthropic>=0.18.0  # Anthropic Claude API（可选）
+
+# 核心依赖（Python 3.12自带，无需安装）
+# asyncio
+# dataclasses
+# logging
+
+# 可选：更丰富的LLM支持
+# litellm>=1.0.0   # 统一LLM接口（支持多种provider）

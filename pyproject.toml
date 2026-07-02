@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feishu-meeting-agent"
+version = "1.0.0"
+description = "飞书会议智能助手 - 不依赖飞书自带AI的独立会议Agent"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Feishu Meeting Agent Contributors" }
+]
+keywords = ["feishu", "lark", "meeting", "agent", "ai", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Conferencing",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/feishu-meeting-agent"
+Repository = "https://github.com/your-username/feishu-meeting-agent"
+Issues = "https://github.com/your-username/feishu-meeting-agent/issues"
+Documentation = "https://github.com/your-username/feishu-meeting-agent#readme"
+
+[project.scripts]
+feishu-agent = "meeting_agent.main:main"
+
+[project.optional-dependencies]
+openai = ["openai>=1.0.0"]
+anthropic = ["anthropic>=0.18.0"]
+deepseek = ["openai>=1.0.0"]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["meeting_agent*"]
+exclude = ["tests*"]
